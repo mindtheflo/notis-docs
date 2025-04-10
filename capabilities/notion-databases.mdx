@@ -1,0 +1,340 @@
+---
+title: Notion Databases Integration
+description: "How Notis.ai integrates with Notion databases for seamless knowledge management"
+---
+
+# Notion Databases Integration
+
+Notis.ai's integration with Notion databases is a core feature that allows you to organize and access your information in a structured way. This guide explains how the integration works and how to make the most of it.
+
+## Understanding the Integration
+
+Notis.ai connects directly to your Notion workspace, allowing you to:
+
+<CardGroup cols={2}>
+  <Card
+    title="Capture to Databases"
+    icon="database"
+  >
+    Send voice notes, tasks, and reminders directly to your Notion databases
+  </Card>
+  
+  <Card
+    title="Structured Organization"
+    icon="table-cells"
+  >
+    Automatically organize information with properties, tags, and categories
+  </Card>
+  
+  <Card
+    title="Bidirectional Sync"
+    icon="arrows-rotate"
+  >
+    Changes made in Notion reflect in Notis and vice versa
+  </Card>
+  
+  <Card
+    title="Query and Retrieve"
+    icon="magnifying-glass"
+  >
+    Search and access your Notion content through voice commands
+  </Card>
+</CardGroup>
+
+## Setting Up the Notion Connection
+
+<Steps>
+  <Step title="Initiate Connection">
+    Send the message "Connect Notion" to Notis through your chosen platform
+  </Step>
+  
+  <Step title="Authorize Access">
+    1. Click the link Notis sends you
+    2. Sign in to your Notion account if prompted
+    3. Review the permissions Notis is requesting
+    4. Click "Authorize"
+  </Step>
+  
+  <Step title="Select Databases">
+    1. Notis will ask which databases you want to use
+    2. Reply with the names or select from options provided
+    3. Confirm your selections
+  </Step>
+  
+  <Step title="Set Default Databases">
+    Specify which databases to use for different types of content:
+    - "Set default tasks database to [Database Name]"
+    - "Set default notes database to [Database Name]"
+    - "Set default calendar to [Database Name]"
+  </Step>
+</Steps>
+
+## Supported Database Types
+
+Notis works with various Notion database types:
+
+<Tabs>
+  <Tab title="Task Databases">
+    **Properties Supported**:
+    - Title (task description)
+    - Status (To Do, In Progress, Done)
+    - Due Date
+    - Priority
+    - Tags/Categories
+    - Assignee
+    - Notes/Details
+    
+    **Commands**:
+    - "Task: Review proposal due Friday priority high #work"
+    - "Show tasks due this week"
+    - "Complete task: Send invoice"
+  </Tab>
+  
+  <Tab title="Note Databases">
+    **Properties Supported**:
+    - Title
+    - Content (rich text)
+    - Tags/Categories
+    - Date Created
+    - Related To
+    - Attachments
+    
+    **Commands**:
+    - "Note: Ideas for marketing campaign #project"
+    - "Search notes about website redesign"
+    - "Show recent notes"
+  </Tab>
+  
+  <Tab title="Calendar Databases">
+    **Properties Supported**:
+    - Event Name
+    - Date/Time
+    - Duration
+    - Location
+    - Attendees
+    - Notes
+    
+    **Commands**:
+    - "Schedule meeting with John on Friday at 2 PM"
+    - "Show my calendar for next week"
+    - "Reschedule client call to Thursday"
+  </Tab>
+  
+  <Tab title="Custom Databases">
+    Notis can work with custom database structures:
+    
+    1. Tell Notis about your custom database: "Connect to my Projects database"
+    2. Map properties: "Map Title to Project Name, Status to Project Status"
+    3. Use with commands: "Add to Projects: New Website Design"
+  </Tab>
+</Tabs>
+
+## How Information Flows
+
+<Steps>
+  <Step title="Voice Input">
+    You send a voice message to Notis through WhatsApp, Telegram, or Email
+    
+    **Example**: "Take a note about the marketing campaign ideas we discussed yesterday"
+  </Step>
+  
+  <Step title="Processing">
+    Notis transcribes your message, identifies the intent, and extracts key information
+    
+    **Example**: Identifies this as a note about "marketing campaign ideas" with a reference to a previous discussion
+  </Step>
+  
+  <Step title="Database Selection">
+    Notis determines which Notion database to use based on the content type and your settings
+    
+    **Example**: Selects your "Notes" database since this is note content
+  </Step>
+  
+  <Step title="Property Mapping">
+    Information is mapped to the appropriate database properties
+    
+    **Example**: 
+    - Title: "Marketing Campaign Ideas"
+    - Content: The transcribed note
+    - Tags: "Marketing" (automatically detected)
+    - Date: Current date
+  </Step>
+  
+  <Step title="Creation in Notion">
+    A new entry is created in your Notion database with all the mapped properties
+  </Step>
+  
+  <Step title="Confirmation">
+    Notis sends you a confirmation with a link to the newly created Notion page
+    
+    **Example**: "✅ I've added your note about Marketing Campaign Ideas to your Notes database. [View in Notion]"
+  </Step>
+</Steps>
+
+## Database Templates
+
+Notis provides pre-configured templates for common use cases:
+
+<CardGroup cols={2}>
+  <Card
+    title="Task Management"
+    icon="list-check"
+  >
+    A database optimized for tracking tasks with status, priority, due dates, and categories
+  </Card>
+  
+  <Card
+    title="Notes Collection"
+    icon="note-sticky"
+  >
+    A flexible database for storing and organizing all types of notes with rich text and tagging
+  </Card>
+  
+  <Card
+    title="Meeting Notes"
+    icon="users"
+  >
+    Specialized for capturing meeting minutes with attendees, action items, and decisions
+  </Card>
+  
+  <Card
+    title="Project Tracker"
+    icon="diagram-project"
+  >
+    Track projects with milestones, status updates, team members, and related resources
+  </Card>
+</CardGroup>
+
+To use a template:
+1. Send "Create new database using [template name] template"
+2. Notis will create the database in your Notion workspace
+3. Set it as your default for the relevant content type
+
+## Advanced Features
+
+<AccordionGroup>
+  <Accordion title="Relation Properties">
+    Notis can maintain relationships between items in different databases:
+    
+    - "Add this note to Project X" (creates a relation to the project)
+    - "Link task to meeting notes from yesterday"
+    - "Show all notes related to Project X"
+    
+    This helps maintain connections between related pieces of information across your knowledge system.
+  </Accordion>
+  
+  <Accordion title="Database Views">
+    Access different views of your Notion databases through Notis:
+    
+    - "Show my tasks in Kanban view"
+    - "Show calendar view for next month"
+    - "Show completed tasks from last week"
+    
+    Notis will provide a link to the specific view in Notion.
+  </Accordion>
+  
+  <Accordion title="Formulas and Rollups">
+    Notis respects and works with Notion's formula and rollup properties:
+    
+    - Formulas automatically calculate values based on other properties
+    - Rollups aggregate information from related items
+    - Notis will include these calculated values when reporting information
+  </Accordion>
+  
+  <Accordion title="Bulk Operations">
+    Perform operations on multiple database items at once:
+    
+    - "Mark all overdue tasks as high priority"
+    - "Move all notes about marketing to the Marketing project"
+    - "Show all incomplete tasks across all projects"
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Consistent Database Structure">
+    Maintain consistent property names and types across similar databases to help Notis correctly map information. For example, always use "Due Date" rather than sometimes using "Deadline" or "Due By."
+  </Accordion>
+  
+  <Accordion title="Use Tags/Categories">
+    Implement a tagging system in your databases and mention these tags when creating content through Notis. For example: "Note about client feedback #project-x #client-feedback"
+  </Accordion>
+  
+  <Accordion title="Regular Database Maintenance">
+    Periodically review and clean up your databases to remove duplicate entries, update outdated information, and archive completed items.
+  </Accordion>
+  
+  <Accordion title="Template Pages">
+    Create template pages in Notion for recurring content types, then tell Notis to use them: "Create new meeting note using the Weekly Team Meeting template"
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Connection Issues">
+    If Notis can't connect to your Notion workspace:
+    
+    1. Check that your Notion account is active and accessible
+    2. Verify that Notis still has the necessary permissions
+    3. Try reconnecting: "Reconnect Notion"
+    4. Check if you've reached API rate limits (rare but possible)
+  </Accordion>
+  
+  <Accordion title="Content Not Appearing">
+    If your content isn't showing up in Notion:
+    
+    1. Verify you're using the correct database name
+    2. Check that the database has the necessary properties
+    3. Ensure you haven't reached any Notion limits
+    4. Try a simple test: "Create test note in [database name]"
+  </Accordion>
+  
+  <Accordion title="Property Mapping Problems">
+    If properties aren't mapping correctly:
+    
+    1. Check that property names match what Notis expects
+    2. Verify property types are compatible (e.g., date properties for due dates)
+    3. Try remapping: "Remap properties for Tasks database"
+  </Accordion>
+  
+  <Accordion title="Permission Errors">
+    If you see permission errors:
+    
+    1. Make sure Notis has access to the specific database
+    2. Check if the database is in a workspace Notis can access
+    3. Verify you haven't revoked Notis's permissions
+    4. Try reconnecting with full permissions
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+Now that you understand how Notis integrates with Notion databases, explore:
+
+<CardGroup cols={3}>
+  <Card
+    title="Second Brain System"
+    icon="brain"
+    href="/second-brain/overview"
+  >
+    Learn about Notis's knowledge management framework
+  </Card>
+  
+  <Card
+    title="Task Management"
+    icon="list-check"
+    href="/use-cases/task-management"
+  >
+    See how to manage tasks with Notis and Notion
+  </Card>
+  
+  <Card
+    title="Note Taking"
+    icon="note-sticky"
+    href="/use-cases/note-taking"
+  >
+    Discover effective note-taking with Notis
+  </Card>
+</CardGroup>
