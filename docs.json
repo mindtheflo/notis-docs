@@ -14,7 +14,7 @@
         "tab": "Documentation",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Quick start guide",
             "pages": [
               "get-started/introduction",
               "get-started/quickstart",
@@ -30,13 +30,13 @@
             ]
           },
           {
-            "group": "Notis Second Brain System",
+            "group": "Notis second brain template",
             "pages": [
               "second-brain/overview"
             ]
           },
           {
-            "group": "Interfaces",
+            "group": "Channels",
             "pages": [
               "interfaces/whatsapp",
               "interfaces/telegram",
@@ -47,14 +47,23 @@
             "group": "Capabilities",
             "pages": [
               "capabilities/reminders",
-              "capabilities/notion-databases"
+              "capabilities/notis-tasks",
+              "capabilities/notion-databases",
+              "capabilities/perplexity-search",
+              "capabilities/image-generation",
+              "capabilities/website-retrieval",
+              "capabilities/text-to-speech",
+              "capabilities/database-agents"
             ]
           },
           {
-            "group": "Use Cases",
+            "group": "Use cases",
             "pages": [
               "use-cases/task-management",
-              "use-cases/note-taking"
+              "use-cases/note-taking",
+              "use-cases/meeting-minutes",
+              "use-cases/listen-to-content",
+              "use-cases/copywriting"
             ]
           }
         ]
