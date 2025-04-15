@@ -36,7 +36,7 @@
             ]
           },
           {
-            "group": "Channels",
+            "group": "Interfaces",
             "pages": [
               "interfaces/whatsapp",
               "interfaces/telegram",
