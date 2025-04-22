@@ -38,6 +38,7 @@
           {
             "group": "Interfaces",
             "pages": [
+              "interfaces/comparison",
               "interfaces/whatsapp",
               "interfaces/telegram",
               "interfaces/email"
