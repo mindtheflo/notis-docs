@@ -1,0 +1,256 @@
+---
+title: Telegram Integration
+description: "How to use Notis.ai with Telegram messaging"
+---
+
+# Telegram Integration
+
+Telegram is one of the primary interfaces for interacting with Notis.ai. This guide explains how to set up and use Notis through Telegram, along with tips for getting the most out of this integration.
+
+## Getting Started with Notis on Telegram
+
+<Steps>
+  <Step title="Find the Notis Bot">
+    - Open Telegram and tap the search icon
+    - Search for "@NotisAIBot"
+    - Tap on the bot in the search results
+  </Step>
+  
+  <Step title="Start the Conversation">
+    - Tap the "Start" button or send "/start"
+    - Notis will respond with a welcome message and setup instructions
+  </Step>
+  
+  <Step title="Complete the Onboarding">
+    - Follow the prompts to set your name and preferences
+    - Connect your Notion account if you want to use that integration
+    - Set up your default databases and preferences
+  </Step>
+</Steps>
+
+## Using Voice Messages with Notis on Telegram
+
+Telegram's voice message feature is the primary way to interact with Notis:
+
+<CardGroup cols={2}>
+  <Card
+    title="Recording Voice Messages"
+    icon="microphone"
+  >
+    - Tap and hold the microphone icon in Telegram
+    - Speak your message clearly
+    - Release to send the voice message to Notis
+  </Card>
+  
+  <Card
+    title="Voice Message Tips"
+    icon="lightbulb"
+  >
+    - Keep messages under 2 minutes for best results
+    - Start with a clear command (e.g., "Take a note about...")
+    - Speak at a moderate pace with clear pronunciation
+  </Card>
+</CardGroup>
+
+## Telegram-Specific Features
+
+<AccordionGroup>
+  <Accordion title="Bot Commands">
+    Telegram bots support slash commands for quick access to features:
+    - `/start` - Initialize or restart the bot
+    - `/help` - Get a list of available commands
+    - `/settings` - Access your settings menu
+    - `/tasks` - View your current tasks
+    - `/notes` - View your recent notes
+    - `/reminders` - View your upcoming reminders
+  </Accordion>
+  
+  <Accordion title="Inline Mode">
+    Use Notis in any chat by typing `@NotisAIBot` followed by your command:
+    - `@NotisAIBot note: Meeting scheduled for Friday`
+    - `@NotisAIBot search: marketing plan`
+    - `@NotisAIBot task: Follow up with client`
+  </Accordion>
+  
+  <Accordion title="Rich Message Formatting">
+    Telegram supports rich formatting in messages, which Notis leverages for:
+    - Clickable buttons for quick responses
+    - Formatted text (bold, italic, links)
+    - Interactive menus for settings and options
+  </Accordion>
+  
+  <Accordion title="File Sharing">
+    Share documents, images, and other files with Notis through Telegram:
+    - Send files directly to be stored with your notes
+    - Notis can extract text from images (OCR)
+    - Attach files to specific notes or tasks
+  </Accordion>
+</AccordionGroup>
+
+## Common Commands on Telegram
+
+Here are some commands specifically formatted for Telegram:
+
+<CardGroup cols={2}>
+  <Card
+    title="Taking Notes"
+    icon="note-sticky"
+  >
+    **Voice**: "Take a note about the client meeting today"  
+    **Text**: "Note: Client requested changes to the proposal"  
+    **Slash**: "/note Client requested changes to the proposal"
+  </Card>
+  
+  <Card
+    title="Setting Reminders"
+    icon="bell"
+  >
+    **Voice**: "Remind me to call Sarah tomorrow at 3 PM"  
+    **Text**: "Reminder: Submit expense report by Friday"  
+    **Slash**: "/remind Submit expense report by Friday"
+  </Card>
+  
+  <Card
+    title="Creating Tasks"
+    icon="list-check"
+  >
+    **Voice**: "Add task: Review marketing materials"  
+    **Text**: "Task: Update website content priority high"  
+    **Slash**: "/task Update website content priority high"
+  </Card>
+  
+  <Card
+    title="Searching"
+    icon="magnifying-glass"
+  >
+    **Voice**: "Search for marketing plan"  
+    **Text**: "Search: client meeting notes from last week"  
+    **Slash**: "/search client meeting notes from last week"
+  </Card>
+</CardGroup>
+
+## Telegram-Specific Commands
+
+<CardGroup cols={2}>
+  <Card
+    title="Inline Search"
+    icon="search"
+  >
+    **Command**: `@NotisAIBot search: [query]`  
+    **Example**: `@NotisAIBot search: project timeline`
+  </Card>
+  
+  <Card
+    title="Quick Note"
+    icon="bolt"
+  >
+    **Command**: `@NotisAIBot [note content]`  
+    **Example**: `@NotisAIBot Remember to update the website`
+  </Card>
+  
+  <Card
+    title="Settings Menu"
+    icon="gear"
+  >
+    **Command**: `/settings`  
+    **Function**: Opens an interactive menu to adjust your preferences
+  </Card>
+  
+  <Card
+    title="Help Command"
+    icon="circle-question"
+  >
+    **Command**: `/help` or `/help [topic]`  
+    **Example**: `/help reminders`
+  </Card>
+</CardGroup>
+
+## Tips for Using Notis with Telegram
+
+<AccordionGroup>
+  <Accordion title="Pin the Conversation">
+    Pin your Notis chat to the top of your Telegram conversations for quick access.
+  </Accordion>
+  
+  <Accordion title="Use Keyboard Shortcuts">
+    On desktop, use Telegram's keyboard shortcuts to quickly navigate and send messages to Notis.
+  </Accordion>
+  
+  <Accordion title="Create a Shortcut on Your Home Screen">
+    On mobile, add a direct shortcut to your Notis chat on your home screen for one-tap access.
+  </Accordion>
+  
+  <Accordion title="Utilize Inline Mode">
+    Use inline mode to quickly add notes or tasks without switching to the Notis chat.
+  </Accordion>
+</AccordionGroup>
+
+## Privacy and Security
+
+When using Notis with Telegram:
+
+- All messages are encrypted using Telegram's security protocols
+- Voice messages are processed securely and then deleted
+- Your data is only accessible to you and not shared with third parties
+- You can delete your data at any time through the privacy settings
+
+## Troubleshooting Telegram Integration
+
+<AccordionGroup>
+  <Accordion title="Bot Not Responding">
+    - Check your internet connection
+    - Try sending `/start` to restart the conversation
+    - Check Telegram's status (down.detector.com) for service issues
+    - If still unresponsive, try "Restart" to reset the conversation
+  </Accordion>
+  
+  <Accordion title="Voice Messages Not Transcribing Correctly">
+    - Ensure you're in a quiet environment
+    - Speak clearly and at a moderate pace
+    - Try breaking longer messages into shorter segments
+    - Use "Correct that to: [correct text]" to fix transcription errors
+  </Accordion>
+  
+  <Accordion title="Command Not Recognized">
+    - Check the command syntax (e.g., `/task` vs. `Task:`)
+    - Try using the full command instead of shortcuts
+    - Use the help command to verify the correct format
+    - Try using voice input instead of text commands
+  </Accordion>
+  
+  <Accordion title="Notion Integration Problems">
+    - Send "/check_notion" to verify the integration status
+    - Try "/reconnect_notion" to reestablish the connection
+    - Ensure your Notion workspace is accessible and permissions are correct
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+Now that you understand how to use Notis with Telegram, explore:
+
+<CardGroup cols={3}>
+  <Card
+    title="WhatsApp Integration"
+    icon="whatsapp"
+    href="/interfaces/whatsapp"
+  >
+    Learn how to use Notis with WhatsApp
+  </Card>
+  
+  <Card
+    title="Email Integration"
+    icon="envelope"
+    href="/interfaces/email"
+  >
+    Use Notis through email
+  </Card>
+  
+  <Card
+    title="Notion Databases"
+    icon="database"
+    href="/capabilities/notion-databases"
+  >
+    How Notis integrates with Notion
+  </Card>
+</CardGroup>

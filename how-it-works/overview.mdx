@@ -1,0 +1,157 @@
+---
+title: How Notis.ai Works
+description: "Understanding the technology behind Notis.ai"
+---
+
+# How Notis.ai Works
+
+Notis.ai is your personal voice-powered assistant that helps you capture, organize, and find information using just your voice. This page explains how Notis works behind the scenes to transform your voice messages into organized knowledge.
+
+## Meet Your Personal Assistant
+
+Notis.ai acts as your personal assistant, available through your favorite messaging platforms. Unlike traditional note-taking apps that require you to type or tap, Notis lets you simply speak your thoughts, tasks, and ideas.
+
+<img
+  className="rounded-lg"
+  src="/images/how-it-works-overview.png"
+  alt="Notis.ai Overview"
+/>
+
+## The Core Process
+
+<Steps>
+  <Step title="Voice Input">
+    You send a voice message to Notis through WhatsApp, Telegram, or Email
+  </Step>
+  
+  <Step title="Speech-to-Text Conversion">
+    Notis uses advanced AI to accurately transcribe your voice message into text
+  </Step>
+  
+  <Step title="Natural Language Processing">
+    The system analyzes the text to understand your intent, identify key information, and categorize the content
+  </Step>
+  
+  <Step title="Action Execution">
+    Based on the analysis, Notis performs the appropriate action (creating a note, setting a reminder, answering a question, etc.)
+  </Step>
+  
+  <Step title="Organization">
+    Information is automatically organized in your Second Brain system and synced with Notion
+  </Step>
+  
+  <Step title="Confirmation">
+    Notis sends you a confirmation message showing what was captured and where it was stored
+  </Step>
+</Steps>
+
+## Key Technologies
+
+Notis.ai combines several cutting-edge technologies to deliver a seamless experience:
+
+<CardGroup cols={2}>
+  <Card
+    title="Speech Recognition"
+    icon="microphone"
+  >
+    State-of-the-art AI models convert your speech to text with high accuracy, even with background noise or accents
+  </Card>
+  
+  <Card
+    title="Natural Language Understanding"
+    icon="brain"
+  >
+    Advanced language models interpret your meaning, identify tasks, extract dates, and categorize information
+  </Card>
+  
+  <Card
+    title="Messaging Platform Integration"
+    icon="message"
+  >
+    Secure connections to popular messaging platforms let you use Notis where you already communicate
+  </Card>
+  
+  <Card
+    title="Notion API"
+    icon="database"
+  >
+    Seamless integration with Notion ensures your information is stored in your personal knowledge system
+  </Card>
+</CardGroup>
+
+## Privacy and Security
+
+Notis.ai is designed with privacy and security as top priorities:
+
+- **End-to-End Encryption**: Your voice messages and data are encrypted in transit
+- **Temporary Storage**: Voice recordings are processed and then deleted
+- **Limited Access**: Only you can access your personal data
+- **Transparent Permissions**: Clear explanation of what data Notis needs and why
+
+## Behind the Scenes Example
+
+Here's what happens when you send a voice message to Notis saying "Remind me to call John tomorrow at 2 PM":
+
+<AccordionGroup>
+  <Accordion title="1. Voice Processing">
+    Your voice message is received by Notis and securely sent to the speech recognition system, which converts it to the text: "Remind me to call John tomorrow at 2 PM"
+  </Accordion>
+  
+  <Accordion title="2. Intent Recognition">
+    The NLU system identifies this as a reminder request and extracts:
+    - Action: Set a reminder
+    - Task: "call John"
+    - Time: "tomorrow at 2 PM"
+  </Accordion>
+  
+  <Accordion title="3. Time Processing">
+    The system calculates the exact date and time based on when you sent the message:
+    - If today is April 10, "tomorrow at 2 PM" becomes April 11 at 14:00
+  </Accordion>
+  
+  <Accordion title="4. Task Creation">
+    Notis creates a reminder in your system with:
+    - Title: "Call John"
+    - Due date: April 11, 2025
+    - Due time: 14:00
+    - Status: Not completed
+  </Accordion>
+  
+  <Accordion title="5. Notion Integration">
+    If connected, Notis adds this reminder to your designated Notion database
+  </Accordion>
+  
+  <Accordion title="6. Confirmation">
+    Notis sends you a message: "✅ I've set a reminder for you to call John tomorrow (Apr 11) at 2:00 PM"
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+Now that you understand how Notis works, learn more about:
+
+<CardGroup cols={3}>
+  <Card
+    title="Voice-to-Text Features"
+    icon="microphone"
+    href="/how-it-works/voice-to-text"
+  >
+    Tips for getting the best transcription results
+  </Card>
+  
+  <Card
+    title="Basic Commands"
+    icon="terminal"
+    href="/how-it-works/basic-commands"
+  >
+    Essential commands to control Notis
+  </Card>
+  
+  <Card
+    title="Second Brain System"
+    icon="brain"
+    href="/second-brain/overview"
+  >
+    How Notis organizes your knowledge
+  </Card>
+</CardGroup>
