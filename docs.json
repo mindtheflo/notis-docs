@@ -58,6 +58,12 @@
             ]
           },
           {
+            "group": "Account Management",
+            "pages": [
+              "account/subscription-management"
+            ]
+          },
+          {
             "group": "Use cases",
             "pages": [
               "use-cases/task-management",
